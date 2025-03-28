@@ -1,5 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import sys
+
 import pygame.image
 from pygame import Surface, Rect, K_DOWN
 from pygame.font import Font
@@ -45,12 +47,10 @@ class Menu:
 
             # Check for all events
             for event in pygame.event.get():
-
                 match event.type:
-
                     case pygame.QUIT:
-                        pygame.quit()  # Close Window
-                        quit()  # End pygame
+                        pygame.quit()
+                        sys.exit()
 
                     case pygame.KEYDOWN:
                         match event.key:

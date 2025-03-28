@@ -3,7 +3,7 @@
 from abc import ABC
 
 from code.Const import ENTITY_SPEED
-from code.entity import Entity
+from code.Entity import Entity
 
 
 class PlayerShot(Entity, ABC):
