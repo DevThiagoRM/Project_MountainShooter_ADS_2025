@@ -1,13 +1,11 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import sys
-
 import pygame.image
+
 from pygame import Surface, Rect, K_DOWN
 from pygame.font import Font
-
 from code.Const import WIN_WIDTH, WIN_HEIGHT, C_ORANGE, MENU_OPTION, C_WHITE, C_YELLOW
-
 
 class Menu:
     def __init__(self, window):
@@ -23,14 +21,10 @@ class Menu:
 
     def run(self):
         menu_option = 0  # START MENU POSITION
-
-        # LOAD MENU MUSIC
+        # MENU MUSIC
         pygame.mixer.music.load('./assets/Menu.mp3')
         pygame.mixer.music.play(-1)  # Param to Loop music
-
         while True:
-            # DRAW IMAGES
-
             # SHOW TITLE MENU
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(50, "Mountain", C_ORANGE, ((WIN_WIDTH / 2), 70))
@@ -42,10 +36,9 @@ class Menu:
                     self.menu_text(25, MENU_OPTION[i], C_YELLOW, ((WIN_WIDTH / 2), 200 + 25 * i))
                 else:
                     self.menu_text(25, MENU_OPTION[i], C_WHITE, ((WIN_WIDTH / 2), 200 + 25 * i))
-
             pygame.display.flip()
 
-            # Check for all events
+            # CHECK FOR ALL EVENTS
             for event in pygame.event.get():
                 match event.type:
                     case pygame.QUIT:
@@ -62,8 +55,3 @@ class Menu:
 
                             case pygame.K_RETURN: # KEY ENTER
                                 return MENU_OPTION[menu_option] # Return menu option name
-
-
-
-
-

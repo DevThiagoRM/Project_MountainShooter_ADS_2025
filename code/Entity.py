@@ -1,10 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from abc import ABC, abstractmethod
 import pygame.image
 
+from abc import ABC, abstractmethod
 from code.Const import ENTITY_HEALTH, ENTITY_DAMAGE, ENTITY_SCORE
-
 
 class Entity(ABC):
     def __init__(self, name: str, position: tuple):
@@ -16,7 +15,6 @@ class Entity(ABC):
         self.score = ENTITY_SCORE[self.name]
         self.speed = 0
         self.last_dmg = 'None'
-
 
     @abstractmethod
     def move(self, ):

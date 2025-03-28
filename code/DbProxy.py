@@ -1,6 +1,5 @@
 import sqlite3
 
-
 class DbProxy:
 
     def __init__(self, db_name: str, ):

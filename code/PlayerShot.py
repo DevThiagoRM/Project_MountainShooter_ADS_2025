@@ -1,10 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from abc import ABC
-
 from code.Const import ENTITY_SPEED
 from code.Entity import Entity
-
 
 class PlayerShot(Entity, ABC):
 

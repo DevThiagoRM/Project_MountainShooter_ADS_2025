@@ -34,7 +34,7 @@ ENTITY_DAMAGE = {
     'Enemy1': 1,
     'Enemy1Shot': 40,
     'Enemy2': 1,
-    'Enemy2Shot': 40,
+    'Enemy2Shot': 40
 }
 
 ENTITY_SCORE = {
@@ -57,7 +57,7 @@ ENTITY_SCORE = {
     'Enemy1': 100,
     'Enemy1Shot': 0,
     'Enemy2': 200,
-    'Enemy2Shot': 0,
+    'Enemy2Shot': 0
 }
 
 ENTITY_SPEED = {
@@ -80,7 +80,7 @@ ENTITY_SPEED = {
     'Enemy1': 3,
     'Enemy1Shot': 6,
     'Enemy2': 6,
-    'Enemy2Shot': 8,
+    'Enemy2Shot': 8
 }
 
 ENTITY_HEALTH = {
@@ -103,14 +103,14 @@ ENTITY_HEALTH = {
     'Enemy1': 50,
     'Enemy1Shot': 5,
     'Enemy2': 60,
-    'Enemy2Shot': 2,
+    'Enemy2Shot': 2
 }
 
 ENTITY_SHOT_DELAY = {
     'Player1': 10,
     'Player2': 10,
     'Enemy1': 100,
-    'Enemy2': 50,
+    'Enemy2': 50
 }
 
 # M
@@ -156,5 +156,5 @@ SCORE_POS = {'Title': (WIN_WIDTH / 2, 50),
              6: (WIN_WIDTH / 2, 230),
              7: (WIN_WIDTH / 2, 250),
              8: (WIN_WIDTH / 2, 270),
-             9: (WIN_WIDTH / 2, 290),
+             9: (WIN_WIDTH / 2, 290)
              }
