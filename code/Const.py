@@ -1,4 +1,3 @@
-# Constants screen image
 import pygame
 
 # C
